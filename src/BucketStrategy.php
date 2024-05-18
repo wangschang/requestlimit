@@ -1,8 +1,8 @@
 <?php
-namespace wangschang\RateLimiter;
+namespace wangschang\RequestLimit;
 
-use wangschang\RateLimiter\StrategyInterface;
-use wangschang\RateLimiter\RequestLimitException;
+use wangschang\RequestLimit\StrategyInterface;
+use wangschang\RequestLimit\RequestLimitException;
 
 class BucketStrategy implements StrategyInterface{
     

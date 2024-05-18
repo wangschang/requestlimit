@@ -1,5 +1,5 @@
 <?php
-namespace wangschang\RateLimiter;
+namespace wangschang\RequestLimit;
 
 use Exception;
 use Throwable;
