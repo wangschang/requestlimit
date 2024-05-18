@@ -9,6 +9,8 @@
 
 ## 2. 使用方法
 
+详情参考 [example 例子](https://github.com/wangschang/requestlimit/blob/master/example.php)
+
 ```php
 require   'vendor/autoload.php';
 
