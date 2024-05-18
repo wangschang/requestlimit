@@ -1,6 +1,6 @@
 <?php
 
-namespace wangschang\RequestLimit;
+namespace RequestLimit;
 
 /**
  * 策略 interface

@@ -1,6 +1,6 @@
 <?php
 
-namespace wangschang\RequestLimit;
+namespace RequestLimit;
 
 /**
  * 存储的 interface

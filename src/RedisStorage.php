@@ -1,9 +1,9 @@
 <?php
 
-namespace wangschang\RequestLimit;
+namespace RequestLimit;
 
-use wangschang\RequestLimit\StorageInterface;
-use wangschang\RequestLimit\RequestLimitException;
+use RequestLimit\StorageInterface;
+use RequestLimit\RequestLimitException;
 
 class RedisStorage implements StorageInterface{
 

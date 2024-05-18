@@ -1,8 +1,8 @@
 <?php
-namespace wangschang\RequestLimit;
+namespace RequestLimit;
 
-use wangschang\RequestLimit\StrategyInterface;
-use wangschang\RequestLimit\RequestLimitException;
+use RequestLimit\StrategyInterface;
+use RequestLimit\RequestLimitException;
 
 class WindowsStrategy implements StrategyInterface{
     

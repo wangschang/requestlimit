@@ -1,8 +1,8 @@
 <?php
-namespace wangschang\RequestLimit;
+namespace RequestLimit;
 
-use wangschang\RequestLimit\StrategyInterface;
-use wangschang\RequestLimit\RequestLimitException;
+use RequestLimit\StrategyInterface;
+use RequestLimit\RequestLimitException;
 
 class BucketStrategy implements StrategyInterface{
     
@@ -48,7 +48,10 @@ class BucketStrategy implements StrategyInterface{
             $last_token_time = $nowtime;
         }
         if($tokens < $this->capacity){
-            $new_tokens = min($this->tokens,$tokens + ($nowtime - $last_token_time) * $this->rate);
+            $new_tokens = min($this->tokens,$tokens + ($nowtime - $last_token_time) * ceil($this->rate));
+            if($new_tokens < 1){
+                return false;
+            }
             $storage->set($value_key,$new_tokens);
             $storage->set($time_key,$nowtime);
             return $this->isAllow($storage,$identifier);

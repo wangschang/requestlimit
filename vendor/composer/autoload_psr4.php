@@ -6,6 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Wangschang\\Requestlimit\\' => array($baseDir . '/src'),
+    'RequestLimit\\' => array($baseDir . '/src'),
     'Predis\\' => array($vendorDir . '/predis/predis/src'),
 );

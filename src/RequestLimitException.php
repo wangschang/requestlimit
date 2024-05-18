@@ -1,5 +1,5 @@
 <?php
-namespace wangschang\RequestLimit;
+namespace RequestLimit;
 
 use Exception;
 use Throwable;

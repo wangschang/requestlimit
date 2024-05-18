@@ -1,9 +1,9 @@
 <?php
 
-namespace wangschang\RequestLimit;
+namespace RequestLimit;
 
-use wangschang\RequestLimit\StorageInterface;
-use wangschang\RequestLimit\RequestLimitException;
+use RequestLimit\StorageInterface;
+use RequestLimit\RequestLimitException;
 
 class FileStorage implements StorageInterface{
 
@@ -31,7 +31,7 @@ class FileStorage implements StorageInterface{
      * @return void
      */
     public function getfilename($key){
-        $filename = $this->path."/".md5($key).".txt";
+        $filename = $this->path."/".($key).".txt";
         return $filename;
     }
     /**
@@ -53,7 +53,12 @@ class FileStorage implements StorageInterface{
      */
     public function get($key){
         $filename = (String)$this->getfilename($key);
-        return trim(file_get_contents($filename));
+        if(!file_exists($filename)){
+            return 0;
+        }else{
+            return trim(file_get_contents($filename));
+        }
+        
     }
     /**
      * 增加

@@ -7,9 +7,9 @@ namespace Composer\Autoload;
 class ComposerStaticInit6a35e23c7e4bbbe973bf7ed8df1c49bf
 {
     public static $prefixLengthsPsr4 = array (
-        'W' => 
+        'R' => 
         array (
-            'Wangschang\\Requestlimit\\' => 24,
+            'RequestLimit\\' => 13,
         ),
         'P' => 
         array (
@@ -18,7 +18,7 @@ class ComposerStaticInit6a35e23c7e4bbbe973bf7ed8df1c49bf
     );
 
     public static $prefixDirsPsr4 = array (
-        'Wangschang\\Requestlimit\\' => 
+        'RequestLimit\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

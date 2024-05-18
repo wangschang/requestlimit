@@ -1,6 +1,6 @@
 <?php
 
-namespace wangschang\RequestLimit;
+namespace RequestLimit;
 
 /**
  * Undocumented class
