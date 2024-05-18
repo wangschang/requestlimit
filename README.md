@@ -3,7 +3,9 @@
 ## 1.支持方法
 
 支持通过redis 和文件的存储，自己扩展可以通过实现接口 `RequestLimit\StorageInterface` 来增加新的支持类型。
-支持窗口和令牌桶的策略，可以通过实现接口 `RequestLimit\`StrategyInterface 来扩展其他策略。
+支持窗口和令牌桶的策略，可以通过实现接口 `RequestLimit\StrategyInterface` 来扩展其他策略。
+
+![流程图](assets/chart.png)
 
 ## 2. 使用方法
 
