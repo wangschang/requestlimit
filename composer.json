@@ -1,0 +1,19 @@
+{
+    "name": "wangschang/requestlimit",
+    "description": "requestlimit",
+    "type": "composer-plugin",
+    "require": {
+        "predis/predis": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wangschang\\Requestlimit\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "wangschang"
+        }
+    ],
+    "minimum-stability": "stable"
+}
