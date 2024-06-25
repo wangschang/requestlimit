@@ -1,4 +1,4 @@
-# requestlimit 请求控制器
+# requestlimit 请求限流器
 
 ## 1.支持方法
 
